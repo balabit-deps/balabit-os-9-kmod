@@ -1,3 +1,11 @@
+kmod (29-1ubuntu1.1) jammy-security; urgency=medium
+
+  * Disable loading of algif_aead module to mitigate CVE-2026-31431
+    (LP: #2150743)
+    - debian/modprobe.d/disable-algif_aead.conf
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 30 Apr 2026 08:32:42 -0400
+
 kmod (29-1ubuntu1) jammy; urgency=low
 
   * Merge from Debian unstable (LP: #1952591). Remaining changes:
